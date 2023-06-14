@@ -1,6 +1,12 @@
+import org.jetbrains.kotlin.com.intellij.lang.Language
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
+import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_1_9
+import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_0
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
-//    kotlin("jvm") version "1.7.21"
-    kotlin("jvm") version "1.8.20-RC"
+    kotlin("jvm") version "1.9.0-Beta"
+    kotlin("plugin.serialization") version "1.8.21"
 }
 
 group = "me.anton"
@@ -37,6 +43,7 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
 //    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx3:1.6.4")
 //    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4")
 //    implementation("io.projectreactor:reactor-core:3.4.22")
@@ -50,40 +57,37 @@ tasks.test {
 }
 
 kotlin {
+//    explicitApi()
+//    explicitApiWarning()
+
     sourceSets.all {
         languageSettings {
             languageVersion = "2.0"
+            enableLanguageFeature("ContextReceivers")
         }
     }
 }
 
 
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask<*>>()
-    .configureEach {
-        compilerOptions {
-            freeCompilerArgs.set(
-                listOf(
-                    "-Xcontext-receivers",
-                    "-Xuse-k2",
-                    )
-            )
-            languageVersion.set(org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_0)
-            // how to set jvmTarget?
-        }
-
-    }
-
-// Deprecated
-//tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-//    kotlinOptions {
-//        freeCompilerArgs = listOf(
-//            "-Xcontext-receivers",
-//            "-Xuse-k2",
-//        )
-//        jvmTarget = "17"
-//        languageVersion = "2.0"
+//tasks.withType<KotlinCompile> {
+//    compilerOptions {
+//        freeCompilerArgs.set(listOf("-Xcontext-receivers"))
+//        jvmTarget.set(JVM_17)
+//        languageVersion.set(KOTLIN_1_9)
 //    }
 //}
 
 
 
+//tasks.withType<KotlinCompile> {
+//    kotlinOptions {
+//        freeCompilerArgs = listOf(
+//            "-Xcontext-receivers",
+//            "-Xuse-k2",
+//        )
+//        languageVersion = "2.0"
+//    }
+//}
+
+
+//jvmTarget = "17"
