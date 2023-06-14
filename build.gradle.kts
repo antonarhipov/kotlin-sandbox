@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.config.LanguageFeature
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.9.0-Beta"
@@ -58,7 +59,7 @@ kotlin {
 
     sourceSets.all {
         languageSettings {
-            languageVersion = "2.0"
+            languageVersion = "2.1"
             enableLanguageFeature(LanguageFeature.ContextReceivers.name)
         }
     }
