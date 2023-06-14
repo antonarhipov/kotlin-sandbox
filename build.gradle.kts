@@ -1,12 +1,8 @@
-import org.jetbrains.kotlin.com.intellij.lang.Language
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
-import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_1_9
-import org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_0
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.config.LanguageFeature
 
 plugins {
     kotlin("jvm") version "1.9.0-Beta"
-    kotlin("plugin.serialization") version "1.8.21"
+    kotlin("plugin.serialization") version "1.9.0-Beta"
 }
 
 group = "me.anton"
@@ -63,12 +59,12 @@ kotlin {
     sourceSets.all {
         languageSettings {
             languageVersion = "2.0"
-            enableLanguageFeature("ContextReceivers")
+            enableLanguageFeature(LanguageFeature.ContextReceivers.name)
         }
     }
 }
 
-
+//
 //tasks.withType<KotlinCompile> {
 //    compilerOptions {
 //        freeCompilerArgs.set(listOf("-Xcontext-receivers"))
@@ -76,8 +72,6 @@ kotlin {
 //        languageVersion.set(KOTLIN_1_9)
 //    }
 //}
-
-
 
 //tasks.withType<KotlinCompile> {
 //    kotlinOptions {
