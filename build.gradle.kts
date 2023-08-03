@@ -1,9 +1,9 @@
 import org.jetbrains.kotlin.config.LanguageFeature
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "1.9.0-Beta"
-    kotlin("plugin.serialization") version "1.9.0-Beta"
+    kotlin("jvm") version "1.9.0"
+    kotlin("plugin.serialization") version "1.9.0"
 }
 
 group = "me.anton"
@@ -17,10 +17,7 @@ repositories {
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
-//        vendor.set(JvmVendorSpec.BELLSOFT)
     }
-//    targetCompatibility = JavaVersion.VERSION_17
-//    sourceCompatibility = JavaVersion.VERSION_17
 }
 
 configurations {
@@ -32,7 +29,6 @@ configurations {
 dependencies {
 //    implementation("org.projectlombok:lombok")
 //    annotationProcessor("org.projectlombok:lombok")
-
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
     implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.10")
     implementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
@@ -45,7 +41,6 @@ dependencies {
 //    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4")
 //    implementation("io.projectreactor:reactor-core:3.4.22")
 //    implementation("io.projectreactor:reactor-test:3.4.22")
-
     implementation(kotlin("script-runtime"))
 }
 
@@ -57,20 +52,24 @@ kotlin {
 //    explicitApi()
 //    explicitApiWarning()
 
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+//        languageVersion.set(KotlinVersion.KOTLIN_1_9)
+    }
+
     sourceSets.all {
         languageSettings {
-            languageVersion = "2.1"
             enableLanguageFeature(LanguageFeature.ContextReceivers.name)
         }
     }
+
 }
 
-//
 //tasks.withType<KotlinCompile> {
 //    compilerOptions {
 //        freeCompilerArgs.set(listOf("-Xcontext-receivers"))
-//        jvmTarget.set(JVM_17)
-//        languageVersion.set(KOTLIN_1_9)
+//        jvmTarget.set(JvmTarget.JVM_17)
+//        languageVersion.set(KotlinVersion.KOTLIN_1_9)
 //    }
 //}
 
@@ -84,5 +83,3 @@ kotlin {
 //    }
 //}
 
-
-//jvmTarget = "17"

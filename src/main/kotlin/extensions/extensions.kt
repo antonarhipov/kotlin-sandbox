@@ -20,8 +20,11 @@ fun String.sarcastic() = asIterable().joinToString("") {
 
 
 
+
 fun join(vararg str: String, s: String = ","): String =
     str.joinToString(separator = s)
+
+
 
 // if value a is null, yield b
 fun selectNotNull(a: Any?, b: Any) = a ?: b

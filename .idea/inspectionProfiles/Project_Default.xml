@@ -1,8 +1,17 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="94724199-abf5-3085-9d88-e4d656db1863" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES" />
     <inspection_tool class="InstantiationOfUtilityClass" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="NullChecksToSafeCall" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
-    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="Vararg before other parameter than a functional literal" description="If after a vararg parameter you have specified something else than a functional literal then probably you have done something bad" problemDescriptor="#ref" text="fun $Name$($Param$,vararg $Vararg$, $P$) " recursive="true" caseInsensitive="false" type="Kotlin" pattern_context="default">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="Name" within="" contains="" />
+        <constraint name="Param" minCount="0" maxCount="2147483647" within="" contains="" />
+        <constraint name="Vararg" maxCount="2147483647" within="" contains="" />
+        <constraint name="P" nameOfExprType="(.*\(.*\).*)" maxCount="2147483647" negateExprType="true" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
   </profile>
 </component>
