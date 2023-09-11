@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "1.9.0"
-    kotlin("plugin.serialization") version "1.9.0"
+    kotlin("jvm") version "1.9.10"
+    kotlin("plugin.serialization") version "1.9.10"
 }
 
 group = "me.anton"
@@ -37,10 +37,6 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-rx3:1.6.4")
-//    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4")
-//    implementation("io.projectreactor:reactor-core:3.4.22")
-//    implementation("io.projectreactor:reactor-test:3.4.22")
     implementation(kotlin("script-runtime"))
 }
 

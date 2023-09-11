@@ -1,5 +1,6 @@
 package extensions
 
+import jdk.internal.joptsimple.internal.Strings.join
 import kotlin.random.Random
 
 fun demo() {
@@ -21,8 +22,6 @@ fun String.sarcastic() = asIterable().joinToString("") {
 
 
 
-fun join(vararg str: String, s: String = ","): String =
-    str.joinToString(separator = s)
 
 
 
@@ -44,9 +43,7 @@ fun demo3() {
 
 
 fun demo2() {
-    val strings = arrayOf("a", "b", "c")
-    join(*strings)
-    Circle(1.0)
+
 }
 
 

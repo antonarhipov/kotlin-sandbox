@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="StructuralSearch">
+    <searchConfiguration name="Lambda with receiver as a parameter" text="fun $Name$($Param$) {}" recursive="true" caseInsensitive="false" type="Kotlin" pattern_context="default">
+      <constraint name="__context__" within="" contains="" />
+      <constraint name="Name" within="" contains="" />
+      <constraint name="Param" nameOfExprType=".*\.\(.*\).*" within="" contains="" />
+    </searchConfiguration>
+  </component>
+</project>

@@ -14,3 +14,4 @@ inline fun Collection<Int>.forEveryOther(block: (Int) -> Unit) {
         }
     }
 }
+

@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="Permanent Script Dependencies">
+    <CLASSES>
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/httpcore5-h2-5.2.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/httpcore5-5.2.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-jupyter-api-0.11.0-381.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlinx-serialization-core-jvm-1.4.1.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/http4k-client-apache-4.34.3.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/http4k-core-4.34.3.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-stdlib-1.8.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-jupyter-common-dependencies-0.11.0-381.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-stdlib-jdk7-1.8.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/annotations-13.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-stdlib-common-1.8.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/slf4j-api-1.7.36.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-stdlib-jdk8-1.8.0.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlinx-serialization-json-jvm-1.4.1.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/httpclient5-5.2.1.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/ideLib/kotlin-jupyter-lib-0.11.0-381.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.0/b727889107fc28c7460b21d1083212f8ce7602c6/junit-platform-commons-1.9.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.0/cc1cb5efae97493dcffb687253a0964ad2e7b99/junit-jupiter-engine-5.9.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.0/a44f7eba3ea214f6ec87ad9fccd3b2ac4681a4/junit-jupiter-api-5.9.0.jar" />
+      <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.5.0/f2355f60f5c027da0326c8af2d9c724d39aa0ce9/kotlinx-serialization-json-jvm-1.5.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.5.0/d701e8cccd443a7cc1a0bcac53432f2745dcdbda/kotlinx-serialization-core-jvm-1.5.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-datetime-jvm/0.4.0/2224732fcb9b6116fbeb0926dd108604e578356b/kotlinx-datetime-jvm-0.4.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-jdk8/1.6.4/5bc4b0bf6fd90fc190fd2f17e919c74c6274cb71/kotlinx-coroutines-jdk8-1.6.4.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/2c997cd1c0ef33f3e751d3831929aeff1390cb30/kotlinx-coroutines-core-jvm-1.6.4.jar" />
+      <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test/1.6.10/kotlin-test-1.6.10.jar" />
+      <root url="file://$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-test-junit5/1.6.10/kotlin-test-junit5-1.6.10.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.9.0-RC/f42325be451f7f28ec68e1e60227035beae7ca9b/kotlin-stdlib-1.9.0-RC.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.0-RC/e5bf0792a19d87d90a78c844d0443eae968233e1/kotlin-stdlib-jdk8-1.9.0-RC.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.0-RC/f27a06069a65b5169eb1b740d6e5d6b582de619c/kotlin-stdlib-jdk7-1.9.0-RC.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.9.0-RC/d9bdb03665199f3548ff91464625d943f816594/kotlin-stdlib-common-1.9.0-RC.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.9.0-RC/cb6798dbfa1a02b91618d0f6e997ef43374bc73f/kotlin-script-runtime-1.9.0-RC.jar" />
+      <root url="file://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.0/bd46891f01817b5ffdd368cb0482a34746610acb/junit-platform-engine-1.9.0.jar" />
+      <root url="file://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.7.0/e660b0079fdaf744dc9cc7f6f3aa3c761ec839b0/kotlin-reflect-1.7.0.jar" />
+      <root url="file://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-reflect-1.8.20-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-jupyter-common-dependencies-0.11.0-381-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlinx-serialization-core-1.4.1-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/http4k-client-apache-4.34.3.0-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlinx-serialization-json-1.4.1-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlinx-serialization-json-jvm-1.4.1-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/httpcore5-h2-5.2-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/httpclient5-5.2.1-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-stdlib-jdk8-1.8.0-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-stdlib-1.8.20-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-jupyter-api-0.11.0-381-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlin-jupyter-lib-0.11.0-381-sources.jar" />
+      <root url="file://$USER_HOME$/Library/Caches/JetBrains/IntelliJIdea2023.2/kotlin-jupyter/kernelProcess/libSources/kotlinx-serialization-core-jvm-1.4.1-sources.jar" />
+    </SOURCES>
+  </library>
+</component>
