@@ -10,7 +10,7 @@ group = "me.anton"
 version = "1.0-SNAPSHOT"
 
 repositories {
-//    mavenLocal()
+    mavenLocal()
     mavenCentral()
 }
 
@@ -34,7 +34,7 @@ dependencies {
     implementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
-    implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.0")
+    implementation(kotlin("reflect"))
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
     implementation(kotlin("script-runtime"))
