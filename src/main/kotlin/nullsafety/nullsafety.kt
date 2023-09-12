@@ -1,11 +1,28 @@
 package nullsafety
 
+import java.io.File
+
+
+fun nullsafe(s: String) {
+    println("String length is ${s.length}")
+}
+
+
 
 fun main(args: Array<String>) {
 
 
     // nullable value
     val user: User? = getUser()
+
+    val s: String? = null
+
+    println(File(s))
+
+
+
+
+
 
     // check for null
     if (user != null) {
@@ -14,8 +31,6 @@ fun main(args: Array<String>) {
 
     // use ?. operator
     println(user?.name)
-
-
 
 }
 

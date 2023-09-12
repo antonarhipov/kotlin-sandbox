@@ -1,6 +1,5 @@
 package extensions
 
-import jdk.internal.joptsimple.internal.Strings.join
 import kotlin.random.Random
 
 fun demo() {
@@ -15,13 +14,6 @@ fun demo() {
 fun String.sarcastic() = asIterable().joinToString("") {
     if (Random.nextBoolean()) it.uppercase() else it.lowercase()
 }
-
-
-
-
-
-
-
 
 
 

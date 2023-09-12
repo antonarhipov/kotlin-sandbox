@@ -2,15 +2,15 @@ import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "1.9.10"
-    kotlin("plugin.serialization") version "1.9.10"
+    kotlin("jvm") version "1.9.20-Beta"
+    kotlin("plugin.serialization") version "1.9.20-Beta"
 }
 
 group = "me.anton"
 version = "1.0-SNAPSHOT"
 
 repositories {
-    mavenLocal()
+//    mavenLocal()
     mavenCentral()
 }
 
