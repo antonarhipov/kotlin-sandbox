@@ -41,7 +41,7 @@ fun main() {
     sortBy(books).forEach({ println(it) })
 
     // Alt+Enter on 'abook' -> Specify type explicitly
-    val abook: Book? = books.firstOrNull { it.title.startsWith("A") }
+    val abook = books.firstOrNull { it.title.startsWith("A") }
 
     // uncomment, F2, Alt+Enter -> Surround with null check
 //    println(abook.title)
