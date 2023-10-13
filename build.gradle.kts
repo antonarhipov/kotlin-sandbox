@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "1.9.20-Beta2"
-    kotlin("plugin.serialization") version "1.9.20-Beta2"
+    kotlin("jvm") version "1.9.20-RC"
+    kotlin("plugin.serialization") version "1.9.20-RC"
 }
 
 group = "me.anton"
