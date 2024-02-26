@@ -1,12 +1,9 @@
 package org.jetbrains;
 
-import nullsafety.NullsafetyKt;
-
-import java.util.Random;
+import java.io.IOException;
 
 public class App {
-    public static void main(String[] args) {
-        var value = new Random().nextInt() > 50 ? "blah" : null;
-        NullsafetyKt.nullsafe(value);
+    public static void main(String[] args) throws IOException {
+
     }
 }

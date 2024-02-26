@@ -1,5 +1,7 @@
 package org.jetbrains;
 
+import java.io.File;
+
 public class DataFlow {
     public Object processData(String id) {
         doSomething(id);
@@ -36,8 +38,10 @@ public class DataFlow {
     }
 
     private void oneThing(String id) {
+        //region some region
         getSomethingFromTheDatabase(id);
         storeResultsInDataBase(id);
+        //endregion
     }
 
     private void getSomethingFromTheDatabase(String id) {
