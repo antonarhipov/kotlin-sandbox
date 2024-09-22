@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
-    kotlin("jvm") version "1.9.22"
-    kotlin("plugin.serialization") version "1.9.22"
+    kotlin("jvm") version "2.0.20"
+    kotlin("plugin.serialization") version "2.0.20"
 }
 
 group = "me.anton"
@@ -26,16 +26,14 @@ configurations {
 }
 
 dependencies {
-//    implementation("org.projectlombok:lombok")
-//    annotationProcessor("org.projectlombok:lombok")
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
-    implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.6.10")
-    implementation("org.junit.jupiter:junit-jupiter-api:5.9.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.6.4")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+    implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.25")
+    implementation("org.junit.jupiter:junit-jupiter-api:5.10.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.8.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     implementation(kotlin("reflect"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation(kotlin("script-runtime"))
 }
 
@@ -49,7 +47,6 @@ kotlin {
 
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
-//        languageVersion.set(KotlinVersion.KOTLIN_1_9)
     }
 
     sourceSets.all {
@@ -60,22 +57,3 @@ kotlin {
     }
 
 }
-
-//tasks.withType<KotlinCompile> {
-//    compilerOptions {
-//        freeCompilerArgs.set(listOf("-Xcontext-receivers"))
-//        jvmTarget.set(JvmTarget.JVM_17)
-//        languageVersion.set(KotlinVersion.KOTLIN_1_9)
-//    }
-//}
-
-//tasks.withType<KotlinCompile> {
-//    kotlinOptions {
-//        freeCompilerArgs = listOf(
-//            "-Xcontext-receivers",
-//            "-Xuse-k2",
-//        )
-//        languageVersion = "2.0"
-//    }
-//}
-
