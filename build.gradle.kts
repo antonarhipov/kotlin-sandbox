@@ -1,9 +1,9 @@
-import org.jetbrains.kotlin.config.LanguageFeature
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.internal.config.LanguageFeature
 
 plugins {
-    kotlin("jvm") version "2.0.20"
-    kotlin("plugin.serialization") version "2.0.20"
+    kotlin("jvm") version "2.1.0-Beta1"
+    kotlin("plugin.serialization") version "2.1.0-Beta1"
 }
 
 group = "me.anton"
@@ -52,6 +52,7 @@ kotlin {
     sourceSets.all {
         languageSettings {
             enableLanguageFeature(LanguageFeature.ContextReceivers.name)
+            enableLanguageFeature(LanguageFeature.WhenGuards.name)
             version = 2.0
         }
     }

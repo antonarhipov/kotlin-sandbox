@@ -1,55 +1,28 @@
 package lang.nullsafety
 
-import java.io.File
+data class City(val name: String)
+data class Address(val city: City?, val street: String)
+data class User(val id: String?, val name: String, val address: Address)
 
+fun getUserLocation(user: User): String {
+    // Safe call operator: ?.
+    val cityName: String? = user.address.city?.name
 
-fun nullsafe(s: String) {
-    println("String length is ${s.length}")
-}
-
-
-
-fun main(args: Array<String>) {
-
-
-    // nullable value
-    val user: User? = getUser()
-
-    val s: String? = null
-
-    println(File(s))
-
-
-
-
-
-
-    // check for null
-    if (user != null) {
-        println(user.name)
+    // Elvis operator: ?: provides a fallback message if city is null
+    val locationInfo = if (cityName != null) {
+        "${user.address.street}, $cityName"
+    } else {
+        "${user.address.street}, City not provided"
     }
 
-    // use ?. operator
-    println(user?.name)
-
+    return locationInfo
 }
 
-fun getUser(): User? {
-    TODO()
+fun main() {
+    val userWithCity = User("1", "Anton", Address(City("Tallinn"), "Main St"))
+    val userWithoutCity = User("2", "Maria", Address(null, "Baker St"))
+
+    // Safe call and Elvis operator handle null city gracefully
+    println(getUserLocation(userWithCity))    // Outputs: "Main St, Tallinn"
+    println(getUserLocation(userWithoutCity)) // Outputs: "Baker St, City not provided"
 }
-
-fun printAnyUserName(o: Any) {
-    // prints null on cast failure
-    println((o as? User)?.name)
-
-    // throws exception on cast failure
-    println((o as User).name)
-}
-
-
-
-data class User(val id: String?, val name: String, val address: Address)
-data class Address(val city: City?, val street: String)
-data class City(val name: String)
-
-fun getS(): String? = TODO()

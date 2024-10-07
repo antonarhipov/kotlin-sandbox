@@ -36,7 +36,7 @@ fun main() = runBlocking {
     }
 }
 
-fun schedule(period: Duration = 3000.milliseconds): Flow<Instant> = flow {
+fun schedule(period: Duration = 1000.milliseconds): Flow<Instant> = flow {
     while (true) {
         emit(Clock.System.now())
         delay(period)

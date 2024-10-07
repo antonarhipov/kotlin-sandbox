@@ -8,7 +8,7 @@ import kotlinx.coroutines.selects.select
 @OptIn(ExperimentalCoroutinesApi::class)
 fun CoroutineScope.fizz() = produce {
     while (true) { // sends "Fizz" every 300 ms
-        delay(300)
+//        delay(300)
         send("Fizz")
     }
 }
@@ -16,7 +16,7 @@ fun CoroutineScope.fizz() = produce {
 @OptIn(ExperimentalCoroutinesApi::class)
 fun CoroutineScope.buzz() = produce {
     while (true) { // sends "Buzz!" every 500 ms
-        delay(500)
+//        delay(500)
         send("Buzz!")
     }
 }
