@@ -1,21 +1,15 @@
 package lang.nullsafety
 
-data class City(val name: String)
-data class Address(val city: City?, val street: String)
 data class User(val id: String?, val name: String, val address: Address)
+data class Address(val city: City?, val street: String)
+data class City(val name: String)
 
 fun getUserLocation(user: User): String {
     // Safe call operator: ?.
-    val cityName: String? = user.address.city?.name
+    val cityName: String? = user.address.city.name
 
     // Elvis operator: ?: provides a fallback message if city is null
-    val locationInfo = if (cityName != null) {
-        "${user.address.street}, $cityName"
-    } else {
-        "${user.address.street}, City not provided"
-    }
-
-    return locationInfo
+    return "${user.address.street}, ${cityName ?: "City not provided"}"
 }
 
 fun main() {
