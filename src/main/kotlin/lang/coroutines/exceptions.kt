@@ -19,12 +19,6 @@ suspend fun main() {
     println("yay")
 }
 
-/**
- * jetbrains annotations
- * micronaut
- * quarkus
- * spring - custom (Repositories, JdbcTemplate, RESTtemplate
- */
 suspend fun firstFunction()/*: Unit = withContext(Dispatchers.IO)*/{
     delay(1000)
 
