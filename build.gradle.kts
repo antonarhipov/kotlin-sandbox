@@ -26,15 +26,16 @@ configurations {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
-    implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.25")
-    implementation("org.junit.jupiter:junit-jupiter-api:5.10.3")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     implementation(kotlin("reflect"))
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.9.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation(kotlin("script-runtime"))
+
+    implementation("org.junit.jupiter:junit-jupiter-api:5.10.3")
+    implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.25")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.10.2")
 }
 
 tasks.test {
