@@ -1,6 +1,5 @@
 package lang.example
 
-import jdk.jfr.Threshold
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
 import kotlinx.datetime.LocalDate
