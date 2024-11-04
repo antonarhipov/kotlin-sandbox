@@ -5,7 +5,7 @@ plugins {
     kotlin("jvm") version "2.1.0-Beta1"
     kotlin("plugin.serialization") version "2.1.0-Beta1"
 
-    id("io.ktor.plugin") version "3.0.0-rc-2"
+    id("io.ktor.plugin") version "3.0.0"
 }
 
 group = "me.anton"
@@ -15,18 +15,6 @@ repositories {
     mavenCentral()
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
-
-configurations {
-    compileOnly {
-        extendsFrom(configurations.annotationProcessor.get())
-    }
-}
-
 dependencies {
     implementation(kotlin("reflect"))
     implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.5.0")
@@ -34,6 +22,8 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.9.0")
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation(kotlin("script-runtime"))
+
+    implementation("org.jetbrains.kotlinx:kotlinx-html-jvm:0.11.0")
 
     implementation("io.ktor:ktor-server-core-jvm")
     implementation("io.ktor:ktor-server-content-negotiation-jvm")
@@ -59,6 +49,10 @@ kotlin {
 //    explicitApi()
 //    explicitApiWarning()
 
+    jvmToolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
     }
@@ -67,6 +61,7 @@ kotlin {
         languageSettings {
             enableLanguageFeature(LanguageFeature.ContextReceivers.name)
             enableLanguageFeature(LanguageFeature.WhenGuards.name)
+            enableLanguageFeature(LanguageFeature.ContractSyntaxV2.name)
             version = 2.0
         }
     }

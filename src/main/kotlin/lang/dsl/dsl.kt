@@ -1,6 +1,5 @@
 package lang.dsl
 
-import lang.coroutines.client
 import model.Client
 import model.ClientBuilder
 import model.CompanyBuilder
