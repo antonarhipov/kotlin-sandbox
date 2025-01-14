@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.internal.config.LanguageFeature
 
 plugins {
-    kotlin("jvm") version "2.1.0-Beta1"
-    kotlin("plugin.serialization") version "2.1.0-Beta1"
+    kotlin("jvm") version "2.1.0-RC2"
+    kotlin("plugin.serialization") version "2.1.0-RC2"
 
     id("io.ktor.plugin") version "3.0.0"
 }
@@ -55,12 +55,18 @@ kotlin {
 
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
+        freeCompilerArgs.add("-Xwhen-guards")
+        freeCompilerArgs.add("-Xmulti-dollar-interpolation")
+        freeCompilerArgs.add("-Xnon-local-break-continue")
     }
 
     sourceSets.all {
         languageSettings {
-            enableLanguageFeature(LanguageFeature.ContextReceivers.name)
             enableLanguageFeature(LanguageFeature.WhenGuards.name)
+            enableLanguageFeature(LanguageFeature.MultiDollarInterpolation.name)
+            enableLanguageFeature(LanguageFeature.BreakContinueInInlineLambdas.name)
+
+            enableLanguageFeature(LanguageFeature.ContextReceivers.name)
             enableLanguageFeature(LanguageFeature.ContractSyntaxV2.name)
             version = 2.0
         }
